@@ -1,6 +1,8 @@
 value = int(input("輸入三位數字:"))
 
-key = value % 2
-judge = bool(value and key) 
+check = bool(value % 2 == 0)
 
-print()
+key = ("奇數","偶數")[check]
+
+print(key)
+
